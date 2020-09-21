@@ -14,11 +14,14 @@ Visual Studio Codeに拡張機能 vscode-markdown-pdf をインストールす�
 https://code.google.com/archive/p/html5resetcss/downloads
 reset.cssの名前で，.vscodeフォルダに保存する。
 
+settings.json の内容をこのプロジェクトのもののように書き換える。
+cssの場所を示すパスは各自の環境にあわせて変える。
+
 準備はここまで。
 
 ### pdfの作成
 
-マークダウンで文書を作成する。
+プロジェクト内でマークダウンの文書を作成する。
 
 vscode-markdown-pdfでpdfをエクスポートする。
 （エクスポートしたいマークダウンファイルの編集画面上で右クリックする。）
