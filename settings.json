@@ -1,0 +1,24 @@
+{
+    "markdown-pdf.convertOnSave": true,
+    "editor.fontSize": 16,
+
+    "markdown.styles": [
+        "/Users/hn/Documents/csslaw/.vscode/reset.css",
+        "/Users/hn/Documents/csslaw/.vscode/csslaw_dev.css"
+    ],
+
+    "markdown-pdf.includeDefaultStyles": false,
+    "markdown-pdf.styles": [
+        "/Users/hn/Documents/csslaw/.vscode/reset.css",
+        "/Users/hn/Documents/csslaw/.vscode/csslaw_dev.css",
+    ],
+    "markdown-pdf.printBackground": false,
+
+    "markdown-pdf.headerTemplate": "<span class='title' style='display: none;'></span>",
+    "markdown-pdf.footerTemplate": "<div style=\"font-size: 10pt; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+    "markdown-pdf.margin.top": "3.5cm",
+    "markdown-pdf.margin.bottom": "2.7cm",
+    "markdown-pdf.margin.left": "3.0cm",
+    "markdown-pdf.margin.right": "2.0cm",
+    "markdown-pdf.breaks": true,
+}

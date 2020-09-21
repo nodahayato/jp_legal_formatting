@@ -1,0 +1,157 @@
+body {
+    font-size: 12pt;
+    font-family: Hiragino Mincho ProN;
+    line-height: 2.1em;
+    max-width: 37em;
+}
+
+h1 {
+    text-align: center;
+    max-width: 9em;
+    margin: auto;
+
+    font-weight: normal;
+
+    line-height: 4.2em;
+}
+
+h2 {
+    counter-reset: h3number 0;
+    counter-increment: h2number 1;
+
+    font-weight: normal;
+}
+h2::before {
+    content: "第" counter(h2number) "　"; /* 第1，第2　数字を全角にしたい。 */
+}
+h2 ~ p {
+    padding: unset;
+   padding-left: 1.5em;
+}
+
+h3 {
+    counter-reset: h4number 0;
+    counter-increment: h3number 1;
+
+    font-weight: normal;
+
+    text-indent: -1.5em;
+    padding-left: 1.5em;
+}
+h3::before{
+    content: "　" counter(h3number) "　"; /* 1，2　数字を全角にしたい。 */
+}
+
+h3 + p {
+    padding-left: 1.5em;
+}
+h3 + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p + p + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p + p + p + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p + p + p + p + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p + p + p + p + p + p + p {
+    padding-left: 1.5em;
+}
+h3 + p + p + p + p + p + p + p + p + p + p {
+    padding-left: 1.5em;
+}
+
+h4 {
+    counter-reset: h5number 0;
+    counter-increment: h4number 1;
+
+    font-weight: normal;
+    text-indent:  -1.5em;
+    padding-left: 1.5em;
+}
+h4::before {
+    content: "　(" counter(h4number) ")　"; /* カッコ付きの1文字にできたりしないか？ */
+}
+
+h4 + p {
+    padding-left: 2.5em;
+}
+h4 + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p + p + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p + p + p + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p + p + p + p + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p + p + p + p + p + p + p {
+    padding-left: 2.5em;
+}
+h4 + p + p + p + p + p + p + p + p + p + p {
+    padding-left: 2.5em;
+}
+
+h5 {
+    counter-increment: h5number 1;
+}
+
+p {
+    text-indent: 1em; /* 行頭1字下げ */
+}
+
+blockquote {
+    padding-left: 3.5em;
+}
+
+blockquote > blockquote {
+    padding-left: 3.5em;
+}
+
+blockquote > p {
+    text-indent: unset;
+}
+
+blockquote + p {
+    text-indent: -1em;
+}
+
+ol {
+    padding-left: 3.5em;
+}
+
+pre {
+    text-align: right;
+}
+code {
+    font-family: Hiragino Mincho ProN;
+}
+
+hr {
+    opacity: 0;
+    break-after: page;
+}
